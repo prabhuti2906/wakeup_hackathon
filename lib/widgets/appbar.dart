@@ -6,7 +6,7 @@ class CustomAppbar extends StatefulWidget {
   _CustomAppbarState createState() => _CustomAppbarState();
 }
 
-Widget customAppBar(BuildContext context){
+Widget customAppBar(BuildContext context) {
   return Container(
     width: MediaQuery.of(context).size.width,
     decoration: BoxDecoration(
@@ -20,7 +20,7 @@ Widget customAppBar(BuildContext context){
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Padding(
-          padding:  EdgeInsets.only(top: 40, left: 16),
+          padding: EdgeInsets.only(top: 40, left: 16),
           child: Row(
             children: [
               Text(
@@ -34,28 +34,34 @@ Widget customAppBar(BuildContext context){
               ),
               Spacer(),
               Padding(
-                padding:  EdgeInsets.only(right: 16),
+                padding: EdgeInsets.only(right: 16),
                 child: Row(
                   children: [
-                    Image.asset("images/contact.png"),
-                    SizedBox(width: 25,),
-                    Image.asset("images/bell.png"),
+                    GestureDetector(
+                      child: Image.asset("images/contact.png"),
+                      onTap: () {},
+                    ),
+                    SizedBox(
+                      width: 25,
+                    ),
+                    GestureDetector(
+                      child: Image.asset("images/bell.png"),
+                      onTap: () {},
+                    ),
                   ],
                 ),
               ),
-
             ],
           ),
         ),
         SizedBox(
           height: 20,
         ),
-
-
       ],
     ),
   );
 }
+
 class _CustomAppbarState extends State<CustomAppbar> {
   @override
   Widget build(BuildContext context) {

@@ -45,126 +45,142 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   height: 20,
                 ),
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 150,
-                  decoration: BoxDecoration(
-                    color: Color(0xff98D4E7),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Center(
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(left: 28),
-                          child: Image.asset("images/meditation.png"),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(left: 20),
-                          child: Text(
-                            "MEDITATION",
-                            style: GoogleFonts.poppins(
-                              fontSize: 30,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w500,
+                // This is the code for meditation
+                GestureDetector(
+                  onTap: (){},
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: Color(0xff98D4E7),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Center(
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(left: 28),
+                            child: Image.asset("images/meditation.png"),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 20),
+                            child: Text(
+                              "MEDITATION",
+                              style: GoogleFonts.poppins(
+                                fontSize: 30,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 SizedBox(
                   height: 20,
                 ),
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 150,
-                  decoration: BoxDecoration(
-                    color: Color(0xff98D4E7),
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Center(
-                    child: Row(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(left: 28),
-                          child: Image.asset("images/breath.png"),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(left: 20),
-                          child: Text(
-                            "BREATHING",
-                            style: GoogleFonts.poppins(
-                              fontSize: 30,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w500,
+                // this is the code for breathing
+                GestureDetector(
+                  onTap: (){},
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: Color(0xff98D4E7),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Center(
+                      child: Row(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(left: 28),
+                            child: Image.asset("images/breath.png"),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 20),
+                            child: Text(
+                              "BREATHING",
+                              style: GoogleFonts.poppins(
+                                fontSize: 30,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
                 SizedBox(height: 20,),
                 Row(
                   children: [
-                    Container(
-                      width: MediaQuery.of(context).size.width/2.3,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        color: Color(0xff98D4E7),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Center(
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(top: 15),
-                              child: Image.asset("images/notes.png"),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(top: 10),
-                              child: Text(
-                                "DIARY",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 30,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
+                    // code for diary
+                    GestureDetector(
+                      onTap: (){},
+                      child: Container(
+                        width: MediaQuery.of(context).size.width/2.3,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          color: Color(0xff98D4E7),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(top: 15),
+                                child: Image.asset("images/notes.png"),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(top: 10),
+                                child: Text(
+                                  "DIARY",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 30,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
                     Spacer(),
-                    Container(
-                      width: MediaQuery.of(context).size.width/2.3,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        color: Color(0xff98D4E7),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Center(
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(top: 15),
-                              child: Image.asset("images/article.png"),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(top: 10),
-                              child: Text(
-                                "ARTICLE",
-                                style: GoogleFonts.poppins(
-                                  fontSize: 30,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
+                    // this is the code for article
+                    GestureDetector(
+                      onTap: (){},
+                      child: Container(
+                        width: MediaQuery.of(context).size.width/2.3,
+                        height: 150,
+                        decoration: BoxDecoration(
+                          color: Color(0xff98D4E7),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Center(
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(top: 15),
+                                child: Image.asset("images/article.png"),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(top: 10),
+                                child: Text(
+                                  "ARTICLE",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 30,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w500,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
