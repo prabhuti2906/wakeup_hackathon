@@ -44,39 +44,25 @@ class _SignInState extends State<SignIn> {
               ),
             ),
             SizedBox(height: 20,),
-            TextFormField(
-
-              decoration: const InputDecoration(
-
-                border: OutlineInputBorder(),
-                prefixIcon: Icon(
-                Icons.person,
-                color: Colors.black,
-
-              ),
-
-                contentPadding: EdgeInsets.all(-10),
-
-                labelText: 'Username *',
-              ),
-              onSaved: (String? value) {},
-              validator: (String? value) {
-                return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
-              },
-            ),
-            SizedBox(height: 15,),
-
             Container(
-              color: Color(0xff98d4e7),
-              padding: EdgeInsets.symmetric(horizontal: 10),
+              color: Color(0xffDDB5E9),
+
               child: TextFormField(
+
                 decoration: const InputDecoration(
-                  contentPadding: EdgeInsets.all(-10),
-                  icon: Icon(
-                    Icons.password,
-                    color: Colors.white,
+
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black, width: 2.0),
                   ),
-                  labelText: 'Password *',
+                  prefixIcon: Icon(
+                  Icons.person,
+                  color: Colors.black,
+
+                ),
+
+                  contentPadding: EdgeInsets.all(-10),
+
+                  labelText: 'Username *',
                 ),
                 onSaved: (String? value) {},
                 validator: (String? value) {
@@ -84,6 +70,35 @@ class _SignInState extends State<SignIn> {
                 },
               ),
             ),
+      SizedBox(height: 20,),
+      Container(
+        color: Color(0xffDDB5E9),
+
+        child: TextFormField(
+
+          decoration: const InputDecoration(
+
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: Colors.black, width: 2.0),
+            ),
+            prefixIcon: Icon(
+              Icons.lock,
+              color: Colors.black,
+
+            ),
+
+            contentPadding: EdgeInsets.all(-10),
+
+            labelText: 'Password *',
+          ),
+          onSaved: (String? value) {},
+          validator: (String? value) {
+            return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
+          },
+        ),
+      ),
+
+
 
 
 
