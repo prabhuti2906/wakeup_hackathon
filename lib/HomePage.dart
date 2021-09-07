@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
                     width: MediaQuery.of(context).size.width,
                     height: 150,
                     decoration: BoxDecoration(
-                      color: Color(0xff98D4E7),
+                      color: Color(0xff98d4e7),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Center(
@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               "MEDITATION",
                               style: GoogleFonts.poppins(
-                                fontSize: 30,
+                                fontSize: 26,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage> {
                             child: Text(
                               "BREATHING",
                               style: GoogleFonts.poppins(
-                                fontSize: 30,
+                                fontSize: 26,
                                 color: Colors.white,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -139,7 +139,7 @@ class _HomePageState extends State<HomePage> {
                                 child: Text(
                                   "DIARY",
                                   style: GoogleFonts.poppins(
-                                    fontSize: 30,
+                                    fontSize: 26,
                                     color: Colors.white,
                                     fontWeight: FontWeight.w500,
                                   ),
@@ -173,7 +173,7 @@ class _HomePageState extends State<HomePage> {
                                 child: Text(
                                   "ARTICLE",
                                   style: GoogleFonts.poppins(
-                                    fontSize: 30,
+                                    fontSize: 26,
                                     color: Colors.white,
                                     fontWeight: FontWeight.w500,
                                   ),

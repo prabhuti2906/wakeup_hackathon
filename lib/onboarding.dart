@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:with_you/HomePage.dart';
+import 'package:with_you/signin.dart';
 
 class OnBoarding extends StatefulWidget {
   @override
@@ -56,7 +57,7 @@ class _OnBoardingState extends State<OnBoarding> {
     Navigator.pushReplacement(
       context,
       PageRouteBuilder(
-        pageBuilder: (c, a1, a2) => HomePage(),
+        pageBuilder: (c, a1, a2) => SignIn(),
         transitionsBuilder: (c, anim, a2, child) =>
             FadeTransition(opacity: anim, child: child),
         transitionDuration: Duration(milliseconds: 1000),

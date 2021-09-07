@@ -28,7 +28,7 @@ Widget customAppBar(BuildContext context) {
                 textAlign: TextAlign.center,
                 style: GoogleFonts.poppins(
                   color: Color(0xFF363636),
-                  fontSize: 40,
+                  fontSize: 35,
                   fontWeight: FontWeight.w600,
                 ),
               ),
