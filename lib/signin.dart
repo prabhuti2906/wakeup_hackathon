@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:with_you/register.dart';
 class SignIn extends StatefulWidget {
@@ -11,103 +12,109 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: PreferredSize(
+        child: Container(),
+        preferredSize: Size(0.0, 0.0),
+      ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(30, 20 , 30 , 0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Padding(
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              SizedBox(height: 50,),
+              Padding(
 
 
-              padding: EdgeInsets.symmetric(vertical: 25),
-              child: CircleAvatar(
-                radius: 70.0,
-                backgroundColor: Color(0xff98d4e7),
-                child: ClipRRect(
+                padding: EdgeInsets.symmetric(vertical: 25),
+                child: CircleAvatar(
+                  radius: 70.0,
+                  backgroundColor: Color(0xff98d4e7),
+                  child: ClipRRect(
 
-                    child: Image.asset(
-                      "images/signinlogo.png",
-                      fit: BoxFit.fill,
-                    )
-                ),
-              ),
-            ),
-            Center(
-              child: Text(
-                'LOGIN',
-                style:TextStyle(
-                  color: Colors.black,
-                  letterSpacing: 1.5,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            SizedBox(height: 20,),
-            Container(
-              color: Color(0xffDDB5E9),
-
-              child: TextFormField(
-
-                decoration: const InputDecoration(
-
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.black, width: 2.0),
+                      child: Image.asset(
+                        "images/signinlogo.png",
+                        fit: BoxFit.fill,
+                      )
                   ),
-                  prefixIcon: Icon(
-                  Icons.person,
-                  color: Colors.black,
-
                 ),
-
-                  contentPadding: EdgeInsets.all(-10),
-
-                  labelText: 'Username *',
-                ),
-                onSaved: (String? value) {},
-                validator: (String? value) {
-                  return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
-                },
               ),
-            ),
+              Center(
+                child: Text(
+                  'LOGIN',
+                  style:TextStyle(
+                    color: Colors.black,
+                    letterSpacing: 1.5,
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(height: 20,),
+              Container(
+                color: Color(0xffDDB5E9),
+
+                child: TextFormField(
+
+                  decoration: const InputDecoration(
+
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.black, width: 2.0),
+                    ),
+                    prefixIcon: Icon(
+                    Icons.person,
+                    color: Colors.black,
+
+                  ),
+
+                    contentPadding: EdgeInsets.all(-10),
+
+                    labelText: 'Username *',
+                  ),
+                  onSaved: (String? value) {},
+                  validator: (String? value) {
+                    return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
+                  },
+                ),
+              ),
       SizedBox(height: 20,),
       Container(
-        color: Color(0xffDDB5E9),
+          color: Color(0xffDDB5E9),
 
-        child: TextFormField(
+          child: TextFormField(
 
-          decoration: const InputDecoration(
+            decoration: const InputDecoration(
 
-            enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(color: Colors.black, width: 2.0),
+              enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.black, width: 2.0),
+              ),
+              prefixIcon: Icon(
+                Icons.lock,
+                color: Colors.black,
+
+              ),
+
+              contentPadding: EdgeInsets.all(-10),
+
+              labelText: 'Password *',
             ),
-            prefixIcon: Icon(
-              Icons.lock,
-              color: Colors.black,
-
-            ),
-
-            contentPadding: EdgeInsets.all(-10),
-
-            labelText: 'Password *',
+            onSaved: (String? value) {},
+            validator: (String? value) {
+              return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
+            },
           ),
-          onSaved: (String? value) {},
-          validator: (String? value) {
-            return (value != null && value.contains('@')) ? 'Do not use the @ char.' : null;
-          },
-        ),
       ),
 
 
 
 
 
-            SizedBox(height: 30,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                ElevatedButton(
-                  onPressed: () {
+              SizedBox(height: 30,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {
     Navigator.push(
     context,
     PageRouteBuilder(
@@ -118,32 +125,33 @@ class _SignInState extends State<SignIn> {
     ),
     );
 
-                  },
+                    },
 
-                  style: OutlinedButton.styleFrom(
-                    padding: EdgeInsets.symmetric(vertical: 5,horizontal: 10),
-                    backgroundColor: Color(0xff98d4e7),
-                    onSurface: Colors.red,
-                    shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
+                    style: OutlinedButton.styleFrom(
+                      padding: EdgeInsets.symmetric(vertical: 5,horizontal: 10),
+                      backgroundColor: Color(0xff98d4e7),
+                      onSurface: Colors.red,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                      ),
                     ),
-                  ),
-                  child: Text(
-                    'SUBMIT',
-                    style: TextStyle(
-                      color: Colors.white,
-                      letterSpacing: 1.5,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
+                    child: Text(
+                      'SUBMIT',
+                      style: TextStyle(
+                        color: Colors.white,
+                        letterSpacing: 1.5,
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
+
+
                   ),
+                ],
+              )
+            ],
 
-
-                ),
-              ],
-            )
-          ],
-
+          ),
         ),
       ),
     );

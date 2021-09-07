@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:with_you/HomePage.dart';
 import 'package:with_you/register.dart';
 import 'package:with_you/signin.dart';
+import 'dairy.dart';
 import 'onboarding.dart';
 
 
@@ -18,6 +19,7 @@ void main() {
        "/HomePage":(context) => HomePage(),
        "/SignIn":(context) => SignIn(),
        "/RegisterPage":(context) => RegisterPage(),
+       "/Dairy":(context) => Dairy(),
 
 
      },

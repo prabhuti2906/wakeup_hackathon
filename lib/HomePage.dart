@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:with_you/widgets/appbar.dart';
 
+import 'dairy.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -22,9 +24,7 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.symmetric(horizontal: 16),
             child: Column(
               children: [
-                SizedBox(
-                  height: 20,
-                ),
+
                 Container(
                   width: MediaQuery.of(context).size.width,
                   height: 70,
@@ -116,10 +116,23 @@ class _HomePageState extends State<HomePage> {
                 ),
                 SizedBox(height: 20,),
                 Row(
+
                   children: [
+
                     // code for diary
                     GestureDetector(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          PageRouteBuilder(
+                            pageBuilder: (c, a1, a2) => Dairy(),
+                            transitionsBuilder: (c, anim, a2, child) =>
+                                FadeTransition(opacity: anim, child: child),
+                            transitionDuration: Duration(milliseconds: 1000),
+                          ),
+                        );
+
+                      },
                       child: Container(
                         width: MediaQuery.of(context).size.width/2.3,
                         height: 150,
@@ -145,6 +158,7 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
+
                             ],
                           ),
                         ),

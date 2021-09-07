@@ -17,12 +17,15 @@ Widget customAppBar(BuildContext context) {
       ),
     ),
     child: Column(
+
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
+        SizedBox(height: 20,),
         Padding(
           padding: EdgeInsets.only(top: 40, left: 16),
           child: Row(
             children: [
+
               Text(
                 'Welcome',
                 textAlign: TextAlign.center,
